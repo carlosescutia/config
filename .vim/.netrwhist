@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/carlos/respaldos/mnt/iplaneg.iplaneg/iplaneg.iplaneg_16-03-2022_18-17'
+let g:netrw_dirhist_0='/home/carlos/dev/iplaneg-web/docker/frontend'
+let g:netrw_dirhist_9='/home/carlos/dev/00_templates/template_3tier'
+let g:netrw_dirhist_8='/home/carlos/dev/00_templates/template_codeigniter'
+let g:netrw_dirhist_7='/home/carlos/.ssh'
+let g:netrw_dirhist_6='/home/carlos/dev/participacion/application'
+let g:netrw_dirhist_5='/home/carlos/dev/participacion/application/cache'
+let g:netrw_dirhist_4='/home/carlos/dev/participacion/application'
+let g:netrw_dirhist_3='/home/carlos/dev/participacion/application/models'
+let g:netrw_dirhist_2='/home/carlos/dev/participacion/application/views/actores'
