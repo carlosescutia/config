@@ -83,6 +83,11 @@ set number
 set numberwidth=3
 filetype plugin indent on
 
+" configure indentline plugin to show indentation lines
+let g:indentLine_color_term = 30
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_char = '┆'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -114,20 +119,9 @@ nmap <leader>d :b#<bar>bd#<CR>
 set foldmethod=indent
 set foldignore=
 set foldlevel=99
-autocmd BufRead *.map source ~/.vim/map_fold.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins configuration
+" => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open file explorer (:Vex, Sex) with tree style
 let g:netrw_liststyle=3
-
-" Macro para convertir qgis:sld a geonode:sld
-" Se invoca con @s en modo de comando (cuando no se está editando)
-" Nota: los símbolos ^M se insertan con ctrl-vm.
-let @s=':%s/<NamedLayer/<sld:NamedLayer/g:%s/<UserStyle/<sld:UserStyle/g:%s/<StyledLayerDescriptor/<sld:StyledLayerDescriptor:%s/\/NamedLayer/\/sld:NamedLayer/g:%s/\/UserStyle/\/sld:UserStyle/g:%s/\/StyledLayerDescriptor/\/sld:StyledLayerDescriptor:%s/se:/sld:/g:%s/SvgParameter/CssParameter/g:g/Description/d'
-
-" Macro para convertir el tag OnlineResource de qgis:sld a geonode:sld. 
-" No se incluye en la macro @s por ser poco comun
-" Se invoca con @o en modo de comando (cuando no se está editando)
-let @o=':%s/OnlineResource/OnlineResource\ xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"/g'
